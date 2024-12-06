@@ -1,11 +1,12 @@
-def factorail(x):
+# We need under code for calculating factorial of numbers(for combinaton)
+def factorial(x):
     p = 1
     for i in range(1,x+1):
         p *= i
     return p
-    
+# We calculate the combinations of numbers
 def combination(n,k):
-    c_answre = factorial(n)/((n-k)*(factoral(k))
+    c_answre = int(factorial(n)/((n-k)*(factorial(k)))
     return c_answre
 
 def final_answre(a,x,n,k):
@@ -18,8 +19,8 @@ def run():
     k = 0
     d = 0
     while k<= n:
-        k += 1
         d += final_answre(a,x,n,k)
+        k += 1
     print(d)
     
 run()
